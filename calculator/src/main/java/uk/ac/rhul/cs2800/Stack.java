@@ -30,7 +30,7 @@ public class Stack {
   }
 
   /**
-   * Removes and returns the object at the top of the Stack
+   * Removes and returns the object at the top of the Stack.
    * 
    * @return The last object added to the Stack or null.
    * @throws EmptyStackException If the List entries is empty this Exception is thrown.
@@ -64,13 +64,13 @@ public class Stack {
       throw new EmptyStackException();
     }
 
-     Entry temp = entries.get(entries.size() - 1);
+    Entry temp = entries.get(entries.size() - 1);
 
-     if (temp != null) {
-       return temp;
-     } else {
-       return null;
-     }
+    if (temp != null) {
+      return temp;
+    } else {
+      return null;
+    }
   }
 
   /**

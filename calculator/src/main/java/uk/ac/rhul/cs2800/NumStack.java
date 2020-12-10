@@ -1,11 +1,12 @@
 package uk.ac.rhul.cs2800;
 
-import java.util.*;
+import java.util.EmptyStackException;
 /**
- * Since reverse Polish evaluation only uses a Stack of numeric values we provide a facade to hide details.
+ * Used to hold the numeric values in the Stack.
  * 
  * @author mirzm
  */
+
 public class NumStack {
   /**
    * numStack is the Stack which holds the numeric values.

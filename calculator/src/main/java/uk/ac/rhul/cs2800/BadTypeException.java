@@ -1,6 +1,3 @@
-/**
- * 
- */
 package uk.ac.rhul.cs2800;
 
 /**
