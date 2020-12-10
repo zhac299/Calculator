@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Tests used in the development of the NumStack class.
  * 
- * @author mirzm
+ * @author Hassan Mirza
  */
 class TestNumStack {
 
@@ -46,11 +46,7 @@ class TestNumStack {
   void nsPop0() {
     NumStack ns = new NumStack();
     try {
-      try {
-        ns.pop();
-      } catch (BadTypeException e) {        
-        e.printStackTrace();
-      }
+      ns.pop();
     } catch (EmptyStackException e) {
       System.out.println(e);
     }
@@ -64,12 +60,8 @@ class TestNumStack {
     NumStack ns = new NumStack();
     ns.push(0f);
     
-    try {
-      if (ns.pop() != 0f) { 
-        fail("Incorrect value popped!");
-      }
-    } catch (BadTypeException e) {
-      e.printStackTrace();
+    if (ns.pop() != 0f) { 
+      fail("Incorrect value popped!");
     }
   }
   
@@ -83,11 +75,7 @@ class TestNumStack {
     
     assertEquals(ns.isEmpty(), false);
     
-    try {
-      ns.pop();
-    } catch (BadTypeException e) {
-      e.printStackTrace();
-    }
+    ns.pop();
     
     assertEquals(ns.isEmpty(), true);
   }

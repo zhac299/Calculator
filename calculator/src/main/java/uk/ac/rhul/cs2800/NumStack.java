@@ -1,17 +1,17 @@
 package uk.ac.rhul.cs2800;
 
 import java.util.EmptyStackException;
+
 /**
  * Used to hold the numeric values in the Stack.
  * 
- * @author mirzm
+ * @author Hassan Mirza
  */
-
 public class NumStack {
   /**
    * numStack is the Stack which holds the numeric values.
    */
-  private Stack numStack = new Stack();
+  Stack numStack = new Stack();
   
   /**
    * Adds the numeric value to the Stack.
@@ -36,16 +36,20 @@ public class NumStack {
    * Removes the last numeric value added to the Stack and returns it.
    * 
    * @return The last numeric value added to the Stack.
-   * @throws BadTypeException If the value is not numeric.
    */
-  float pop() throws BadTypeException {
-    if (numStack.listSize == 0) {
+  float pop() {
+    if (isEmpty()) {
       throw new EmptyStackException();
     } else {
       Entry ne = numStack.pop();
       
-      return ne.getValue();
+      try {
+        return ne.getValue();
+      } catch (BadTypeException e) {
+        System.out.println(e);
+      }
     }
+    return 0f; //This return statement is never reached.
   }
 
 }
