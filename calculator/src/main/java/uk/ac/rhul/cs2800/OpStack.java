@@ -8,6 +8,7 @@ import java.util.EmptyStackException;
  * @author Hassan Mirza
  */
 public class OpStack {
+  
   /**
    * opStack is the Stack which holds the Symbols.
    */
@@ -49,7 +50,7 @@ public class OpStack {
         System.out.println(e);
       }
     }
-    return null; // This return statement is never run.
+    return null;
   }
 
 }

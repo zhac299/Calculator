@@ -49,7 +49,7 @@ public class NumStack {
         System.out.println(e);
       }
     }
-    return 0f; //This return statement is never reached.
+    return 0f;
   }
 
 }
