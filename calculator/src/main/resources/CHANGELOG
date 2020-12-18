@@ -1,0 +1,6 @@
+v0.1 Release
+
+First Version 0 Release
+
+Allows Users to evaluate expressions via the console.
+Fixed bugs where expression were being evaluated negatively when answer should be positive and vice versa.
